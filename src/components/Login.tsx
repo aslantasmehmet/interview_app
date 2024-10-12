@@ -1,21 +1,39 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Button, Typography, Paper } from "@mui/material";
+import { Button, Typography, Paper, Stack } from "@mui/material";
 
 const Login: React.FC = () => {
   const { loginWithRedirect } = useAuth0();
 
   return (
-    <Paper elevation={3} style={{ padding: "20px", maxWidth: "400px", margin: "auto", marginTop: "100px" }}>
-      <Typography variant="h5" gutterBottom>
-        Giriş Yap
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Uygulamamıza erişmek için lütfen giriş yapın.
-      </Typography>
-      <Button variant="contained" color="primary" onClick={() => loginWithRedirect()} fullWidth>
-        Giriş Yap
-      </Button>
+    <Paper 
+      elevation={6} 
+      sx={{ 
+        padding: 4, 
+        maxWidth: 500, 
+        margin: "auto", 
+        marginTop: 10, 
+        borderRadius: 3, 
+        backgroundColor: "#fafafa" 
+      }}
+    >
+      <Stack spacing={4} alignItems="center">
+        <Typography variant="h4" color="secondary" gutterBottom>
+          Giriş Yap
+        </Typography>
+        <Typography variant="body1" textAlign="center">
+          Uygulamamıza erişmek için lütfen giriş yapın.
+        </Typography>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          size="large" 
+          onClick={() => loginWithRedirect()} 
+          sx={{ width: '100%', paddingY: 1.5, borderRadius: 2 }}
+        >
+          Giriş Yap
+        </Button>
+      </Stack>
     </Paper>
   );
 };
