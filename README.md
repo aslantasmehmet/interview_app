@@ -1,23 +1,77 @@
 # Interview App
 
 ## Purpose
-This project demonstrates user management using Auth0 and Marvel API integration with a microfrontend architecture. It is built using React, TypeScript, Redux, and MUI.
+
+The **Interview App** is a web application designed for managing user authentication and providing a dashboard for browsing Marvel characters and series. It integrates Auth0 for authentication and the Marvel API for data retrieval, implementing a microfrontend architecture.
+
+## Features
+
+- User login and logout functionality using Auth0.
+- Marvel character and series management with pagination, search, and filtering.
+- Visual representation of character and series statistics through charts.
+- Responsive design for optimal viewing on various devices.
 
 ## Installation
-- Clone the repository.
-- Run `npm install` to install dependencies.
-- Start the project with `npm start`.
 
-## How to Use
-- Configure `.env` for Auth0 and Marvel API credentials.
-- Upon successful login, users can view their profile and interact with the Marvel API.
+### Prerequisites
 
-## Modules
-- **User Management**: Handles user authentication and authorization using Auth0.
-- **Marvel Dashboard**: Fetches and displays data from Marvel API.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-## Recent Updates
-- **JWT Token Management**: Implemented local storage support for JWT tokens and added expiration check logic to ensure token validity.
-- **User Info Handling**: Updated the Redux state management to safely handle user information and prevent TypeScript errors when user data is unavailable.
-- **Redux Integration**: Enhanced the application’s architecture with Redux to manage authentication and user state efficiently.
+### Steps to Set Up
 
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd interview_app
+   npm install
+   ```
+
+# or
+
+yarn install
+
+
+### Create a .env file in the root directory and add your Marvel API credentials
+REACT_APP_AUTH0_DOMAIN=
+REACT_APP_AUTH0_CLIENT_ID=
+REACT_APP_AUTH0_AUDIENCE=
+REACT_APP_MARVEL_PUBLIC_KEY=
+REACT_APP_MARVEL_PRIVATE_KEY=
+
+### Start the application
+npm start
+# or
+yarn start
+
+
+### Usage
+Login: Upon navigating to the homepage, you will be prompted to log in. Please use your credentials to gain access to the application.
+Marvel Dashboard: After logging in, you can access the Marvel dashboard where you can search for characters, view statistics, and see detailed information.
+Environment Variables
+REACT_APP_MARVEL_PUBLIC_KEY: Your Marvel API public key.
+REACT_APP_MARVEL_PRIVATE_KEY: Your Marvel API private key.
+Additional Command-Line Parameters
+The application does not currently support additional command-line parameters.
+
+### Screenshots
+### Giriş Ekranı
+![Giriş Ekranı](assets/SS1.png)
+
+### Kullanıcı Profili
+![Kullanıcı Profili](assets/SS2.png)
+
+### Marvel App Dashboard
+![Kullanıcı Profili](assets/SS3.png)
+
+### Dependencies
+React
+React Router
+Auth0
+Material-UI (MUI)
+Recharts
+Axios
+CryptoJS
+Redux
+@mui/x-data-grid
