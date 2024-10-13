@@ -6,15 +6,15 @@ const UserProfile: React.FC = () => {
   const { user, logout } = useAuth0();
 
   return (
-    <Paper 
-      elevation={6} 
-      sx={{ 
-        padding: 4, 
-        maxWidth: 500, 
-        margin: "auto", 
-        marginTop: 8, 
-        borderRadius: 2, 
-        backgroundColor: "#f5f5f5" 
+    <Paper
+      elevation={6}
+      sx={{
+        padding: 4,
+        maxWidth: 500,
+        margin: "auto",
+        marginTop: 8,
+        borderRadius: 2,
+        backgroundColor: "#f5f5f5",
       }}
     >
       <Stack spacing={3} alignItems="center">
@@ -27,12 +27,12 @@ const UserProfile: React.FC = () => {
         <Typography variant="body1">
           <strong>Kullanıcı ID:</strong> {user?.sub}
         </Typography>
-        
+
         <Button
           variant="contained"
           color="primary"
           onClick={() =>
-              logout({ logoutParams: { returnTo: window.location.origin } })
+            logout({ logoutParams: { returnTo: window.location.origin } })
           }
           fullWidth
         >
@@ -43,9 +43,9 @@ const UserProfile: React.FC = () => {
           variant="outlined"
           color="secondary"
           fullWidth
-          onClick={() => window.location.href = "/marvel-app"} // Marvel App'e yönlendirme
+          onClick={() => (window.location.href = "/marvel-dashboard")} // Marvel Dashboard'a yönlendirme
         >
-          Marvel App
+          Marvel App Dashboard
         </Button>
       </Stack>
     </Paper>
