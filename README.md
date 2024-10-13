@@ -27,9 +27,7 @@ The **Interview App** is a web application designed for managing user authentica
    cd interview_app
    npm install
    ```
-
-# or
-
+ or
 yarn install
 
 
@@ -42,18 +40,18 @@ REACT_APP_MARVEL_PRIVATE_KEY=
 
 ### Start the application
 npm start
-# or
+or
 yarn start
 
 
 ### Usage
-Login: Upon navigating to the homepage, you will be prompted to log in. Please use your credentials to gain access to the application.
-Marvel Dashboard: After logging in, you can access the Marvel dashboard where you can search for characters, view statistics, and see detailed information.
-Environment Variables
-REACT_APP_MARVEL_PUBLIC_KEY: Your Marvel API public key.
-REACT_APP_MARVEL_PRIVATE_KEY: Your Marvel API private key.
-Additional Command-Line Parameters
-The application does not currently support additional command-line parameters.
+## Login: Upon navigating to the homepage, you will be prompted to log in. Please use your credentials to gain access to the application.
+## Marvel Dashboard: After logging in, you can access the Marvel dashboard where you can search for characters, view statistics, and see detailed information.
+## Environment Variables
+## REACT_APP_MARVEL_PUBLIC_KEY: Your Marvel API public key.
+## REACT_APP_MARVEL_PRIVATE_KEY: Your Marvel API private key.
+## Additional Command-Line Parameters
+## The application does not currently support additional command-line parameters.
 
 ### Screenshots
 ### Giriş Ekranı
